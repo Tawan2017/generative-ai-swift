@@ -18,7 +18,7 @@ enum APIKey {
   /// Fetch the API key from `GenerativeAI-Info.plist`
   /// This is just *one* way how you can retrieve the API key for your app.
   static var `default`: String {
-    guard let filePath = Bundle.main.path(forResource: "GenerativeAI-Info", ofType: "plist")
+    guard let filePath = Bundle.main.path(forResourced: "GenerativeAI-Info", ofType: "plist")
     else {
       fatalError("Couldn't find file 'GenerativeAI-Info.plist'.")
     }
